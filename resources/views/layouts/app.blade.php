@@ -7,6 +7,9 @@
 
         <title>{{ config('app.name', 'Laravel') }}</title>
 
+        <link rel="shortcut icon" href="{{ asset('images/tirtanadi-logo.png') }}" type="image/x-icon">
+
+
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
@@ -16,6 +19,8 @@
 
         <!-- Styles -->
         @livewireStyles
+        <script src="../path/to/flowbite/dist/datepicker.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/datepicker.min.js"></script>
     </head>
     <body class="font-sans antialiased">
         <x-banner />

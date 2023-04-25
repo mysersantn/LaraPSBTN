@@ -16,6 +16,26 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                 </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link href="{{ route('pendaftaran-main') }}" :active="request()->routeIs('pendaftaran-main')">
+                        {{ __('Pendaftaran') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link href="{{ route('pembayaran-main') }}" :active="request()->routeIs('pembayaran-main')">
+                        {{ __('Pembayaran') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link href="{{ route('super-user-main') }}" :active="request()->routeIs('super-user-main')">
+                        {{ __('Superuser') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link href="{{ route('pusat-main') }}" :active="request()->routeIs('pusat-main')">
+                        {{ __('Pusat') }}
+                    </x-nav-link>
+                </div>
             </div>
 
             <div class="hidden sm:flex sm:items-center sm:ml-6">
