@@ -31,10 +31,131 @@
                                     class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                                     <th scope="row"
                                         class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                        Pendaftaran Pelanggan (Loket)
+                                        Rekanan
                                     </th>
                                     <td class="px-6 py-4 text-left">
-                                        <a href="pendaftaran-pelanggan"
+                                        <a href="master-rekanan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Cabang
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="master-cabang"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Golongan Bangunan
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="master-golongan-bangunan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Type Meter
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="master-type-meter"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Kode Pos
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="master-kode-pos"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Kelurahan
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="master-kelurahan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Kecamatan
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="master-kecamatan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Kota/Kabupaten
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="master-kota-kabupaten"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Provinsi
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="master-provinsi"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Material
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="master-material"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Jalan (DSML)
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="master-jalan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Wilayah
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="master-wilayah"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
                                     </td>
                                 </tr>
@@ -66,7 +187,62 @@
                                     class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                                     <th scope="row"
                                         class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                        Pendaftaran Pelanggan (Loket)
+                                        Menu
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Responsibility
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Module
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Menu Responsibility
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        User Responsibility
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        User
                                     </th>
                                     <td class="px-6 py-4 text-left">
                                         <a href="pendaftaran-pelanggan"

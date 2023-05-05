@@ -27,7 +27,7 @@
                     class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400"
                     data-accordion-target="#accordion-flush-body-1" aria-expanded="false"
                     aria-controls="accordion-flush-body-1">
-                    <span>Cetak Ulang</span>
+                    <span>Pendaftaran</span>
                     <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
@@ -212,7 +212,117 @@
                                     class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                                     <th scope="row"
                                         class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                        Pendaftaran Pelanggan (Loket)
+                                        Cetak Ulang SPK dan SPMK
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Cetak Ulang BAP
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Cetak Ulang SPKO
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Cetak Ulang Pemberitahuan Biaya Pasang
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Cetak Ulang ABPD
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Cetak Ulang Survey
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Cetak Ulang BPPB
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Cetak Ulang Aktivasi
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Cetak Ulang Form Pendaftaran
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Cetak Perjanjian Pelanggan
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Cetak Ulang SPPD
                                     </th>
                                     <td class="px-6 py-4 text-left">
                                         <a href="pendaftaran-pelanggan"
@@ -247,7 +357,51 @@
                                     class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                                     <th scope="row"
                                         class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                        Pendaftaran Pelanggan (Loket)
+                                        Ubah Data ABPD
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Ubah Data Survey
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Ubah Data Pemasangan
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Ubah Data NPA
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Ubah Data Nama & Alamat
                                     </th>
                                     <td class="px-6 py-4 text-left">
                                         <a href="pendaftaran-pelanggan"
@@ -282,7 +436,172 @@
                                     class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                                     <th scope="row"
                                         class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                        Pendaftaran Pelanggan (Loket)
+                                        Daftar Calon Pelanggan yang Bermohon Perbulan
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Daftar Calon Pelanggan yang Sudah Bayar
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Daftar Permohonan Sudah Survey
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Daftar Permohonan Sudah Bayar
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Daftar Permohonan Sudah Pasang
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Daftar Permohonan Sambungan Baru
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Daftar Calon Pelanggan Yang Sudah Pasang
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Daftar Pemasangan Sambungan Baru
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Daftar Calon Pelanggan Yang Sudah Aktif
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Daftar Calon Pelanggan Yang Sudah Pasang Belum Aktif
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Daftar Calon Pelanggan Yang Sudah Bayar Belum Pasang
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Daftar Calon Pelanggan Yang Belum Pasang
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Daftar Calon Pelanggan Survey Tidak Berhasil
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Daftar Calon Pelanggan Pemasangan Distribusi
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Daftar Calon Pelanggan MBR Yang Bermohon Perbulan
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Daftar Calon Pelanggan MBR Yang Sudah Terpasang
                                     </th>
                                     <td class="px-6 py-4 text-left">
                                         <a href="pendaftaran-pelanggan"
@@ -317,7 +636,95 @@
                                     class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                                     <th scope="row"
                                         class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                        Pendaftaran Pelanggan (Loket)
+                                        Rekap Calon Pelanggan Yang Sudah Bayar Belum Pasang
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Rekap Calon Pelanggan Yang Sudah Bayar Belum Pasang
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Rekap Calon Pelanggan Yang Sudah Pasang Belum Aktif
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Rekap Calon Pelanggan Yang Sudah Aktif
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Rekap Calon Pelanggan Yang Sudah Belum Pasang
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Rekap Calon Pelanggan Yang Sudah Sudah Pasang
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Rekap Calon Pelanggan Yang Sudah Bayar
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Rekap Calon Pelanggan Yang Bermohon Perbulan
+                                    </th>
+                                    <td class="px-6 py-4 text-left">
+                                        <a href="pendaftaran-pelanggan"
+                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row"
+                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        Status Pendaftaran
                                     </th>
                                     <td class="px-6 py-4 text-left">
                                         <a href="pendaftaran-pelanggan"
@@ -330,6 +737,5 @@
                 </div>
             </div>
         </div>
-
     </div>
 </div>
