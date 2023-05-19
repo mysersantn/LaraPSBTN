@@ -54,9 +54,23 @@
 
         <!-- Name -->
         <div class="col-span-6 sm:col-span-4">
-            <x-label for="name" value="{{ __('Name') }}" />
+            <x-label for="name" value="{{ __('Username') }}" />
             <x-input id="name" type="text" class="mt-1 block w-full" wire:model.defer="state.name" autocomplete="name" />
             <x-input-error for="name" class="mt-2" />
+        </div>
+
+         <!-- Fullname -->
+         <div class="col-span-6 sm:col-span-4">
+            <x-label for="fullname" value="{{ __('Fullname') }}" />
+            <x-input id="fullname" type="text" class="mt-1 block w-full" wire:model.defer="state.fullname" autocomplete="fullname" />
+            <x-input-error for="fullname" class="mt-2" />
+        </div>
+
+        <!-- Phone -->
+        <div class="col-span-6 sm:col-span-4">
+            <x-label for="phone" value="{{ __('No Hp') }}" />
+            <x-input id="phone" type="text" class="mt-1 block w-full" wire:model.defer="state.phone" autocomplete="phone" />
+            <x-input-error for="phone" class="mt-2" />
         </div>
 
         <!-- Email -->

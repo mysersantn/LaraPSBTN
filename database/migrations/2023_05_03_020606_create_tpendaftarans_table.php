@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('no_telp_pemohon');
             $table->string('pemilik');
             $table->string('almt_pasang');
-            $table->string('no_hp');
+            $table->string('phone');
             $table->string('no_telp');
             $table->string('kd_pos');
             $table->string('kd_prop');

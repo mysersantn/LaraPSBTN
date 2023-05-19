@@ -12,7 +12,10 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('rkabupatens', function (Blueprint $table) {
-            $table->id();
+            $table->bigInteger('kd_prop');
+            $table->bigInteger('kd_kab');
+            $table->string('kabupaten');
+            $table->bigInteger('upd_userid');
             $table->timestamps();
         });
     }
