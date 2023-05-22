@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Livewire\{PendaftaranPelanggan,Ubahdatanama,Ubahdatasurvey,Ubahdatapemasangan,Cetakulangbap,Cetakulangspko,Pemberitahuanbiayapasang,Cetakulangabpd,Cetakulangsurvey,Cetakulangbppb};
+use App\Http\Livewire\{PendaftaranPelanggan,Ubahdatanama,Ubahdatasurvey,Ubahdatapemasangan,Cetakulangbap,Cetakulangspko,Pemberitahuanbiayapasang,Cetakulangabpd,Cetakulangsurvey,Cetakulangbppb,Cetakulangaktivasi};
 use App\Http\Livewire\{PendaftaranMain,PembayaranMain,PusatMain,SuperUserMain};
 use App\Http\Livewire\{MasterCabang,MasterGolonganBangunan,MasterJalan,MasterKecamatan,MasterKelurahan,MasterKodePos,MasterKotaKabupaten,MasterMaterial,MasterProvinsi,MasterRekanan,MasterTypeMeter,MasterWilayah};
 
@@ -43,6 +43,7 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
     Route::get('/cetakulangabpd', Cetakulangabpd::class)->name('cetakulangabpd');
     Route::get('/cetakulangsurvey', Cetakulangsurvey::class)->name('cetakulangsurvey');
     Route::get('/cetakulangbppb', Cetakulangbppb::class)->name('cetakulangbppb');
+    Route::get('/cetakulangaktivasi', Cetakulangaktivasi::class)->name('cetakulangaktivasi');
 
     // Submenu Master Data
     Route::get('/master-cabang', MasterCabang::class)->name('master-cabang');
