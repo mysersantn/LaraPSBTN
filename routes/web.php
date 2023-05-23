@@ -5,7 +5,7 @@ use App\Http\Livewire\{PendaftaranPelanggan,Ubahdatanama,Ubahdatasurvey,Ubahdata
 use App\Http\Livewire\{PendaftaranMain,PembayaranMain,PusatMain,SuperUserMain};
 use App\Http\Livewire\{MasterCabang,MasterGolonganBangunan,MasterJalan,MasterKecamatan,MasterKelurahan,MasterKodePos,MasterKotaKabupaten,MasterMaterial,MasterProvinsi,MasterRekanan,MasterTypeMeter,MasterWilayah};
 use App\Http\Livewire\{Daftarcalonplgygbermohon,Daftarplgygsudahbayar,Daftarpermohonansudahsurvey,Daftarpermohonanyangsudahbayar,Daftarpermohonansudahpasang,Daftarpermohonansambunganbaru,Daftarcalonpelangganygsdhpasang,Daftarpemasangansambunganbaru,Daftarcalonpelangganyangsudahaktif};
-use App\Http\Livewire\{Sudahpasangbelumaktif};
+use App\Http\Livewire\{Sudahpasangbelumaktif,Sudahbayarbelumpasang};
 
 /*
 |--------------------------------------------------------------------------
@@ -59,6 +59,7 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
     Route::get('/daftarpemasangansambunganbaru', Daftarpemasangansambunganbaru::class)->name('daftarpemasangansambunganbaru');
     Route::get('/daftarcalonpelangganyangsudahaktif', Daftarcalonpelangganyangsudahaktif::class)->name('daftarcalonpelangganyangsudahaktif');
     Route::get('/sudahpasangbelumaktif', Sudahpasangbelumaktif::class)->name('sudahpasangbelumaktif');
+    Route::get('/sudahbayarbelumpasang', Sudahbayarbelumpasang::class)->name('sudahbayarbelumpasang');
 
 
     // Submenu Master Data
