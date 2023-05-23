@@ -472,7 +472,7 @@
                                         Daftar Permohonan Sudah Bayar
                                     </th>
                                     <td class="px-6 py-4 text-left">
-                                        <a href="pendaftaran-pelanggan"
+                                        <a href="daftarpermohonanyangsudahbayar"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
                                     </td>
                                 </tr>
