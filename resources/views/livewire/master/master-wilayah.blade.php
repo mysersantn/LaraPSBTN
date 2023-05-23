@@ -52,7 +52,7 @@
                                 class="fa-solid fa-plus"></i> Tambah Data</button>
                     </div>
                     <label for="table-search" class="sr-only">Search</label>
-                    <div class="relative">
+                    <div class="relative m-1">
                         <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                             <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor"
                                 viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -103,7 +103,7 @@
                                 4
                             </td>
                             <td class="px-6 py-4">
-                                <button class="bg-blue-800 rounded-lg text-white py-1 px-4 hover:bg-blue-950"><i class="fa-solid fa-eye"></i> view</button>
+                                <button class="w-max bg-blue-800 rounded-lg text-white py-1 px-4 hover:bg-blue-950"><i class="fa-solid fa-eye"></i> view</button>
                             </td>
                         </tr>
                     </tbody>

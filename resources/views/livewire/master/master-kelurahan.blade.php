@@ -52,7 +52,7 @@
                                 class="fa-solid fa-plus"></i> Tambah Data</button>
                     </div>
                     <label for="table-search" class="sr-only">Search</label>
-                    <div class="relative">
+                    <div class="relative m-1">
                         <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                             <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor"
                                 viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -102,40 +102,42 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach ($masterKelurahan as $item)
                         <tr
                             class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                             <th scope="row"
                                 class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                1
+                                {{$loop->iteration}}
                             </th>
                             <td class="px-6 py-4">
-                                2
+                                {{$item->kd_prop}}
                             </td>
                             <td class="px-6 py-4">
-                                3
+                                {{$item->rprovinsi->provinsi}}
                             </td>
                             <td class="px-6 py-4">
-                                4
+                                {{$item->kd_kab}}
                             </td>
                             <td class="px-6 py-4">
-                                5
+                                {{$item->rkabupaten->kabupaten}}
                             </td>
                             <td class="px-6 py-4">
-                                5
+                                {{$item->kd_kec}}
                             </td>
                             <td class="px-6 py-4">
-                                5
+                                {{$item->rkecamatan->kecamatan}}
                             </td>
                             <td class="px-6 py-4">
-                                5
+                                {{$item->kd_kel}}
                             </td>
                             <td class="px-6 py-4">
-                                5
+                                {{$item->kelurahan}}
                             </td>
                             <td class="px-6 py-4">
-                                <button class="bg-blue-800 rounded-lg text-white py-1 px-4 hover:bg-blue-950"><i class="fa-solid fa-eye"></i> view</button>
+                                <button class="w-max bg-blue-800 rounded-lg text-white py-1 px-4 hover:bg-blue-950"><i class="fa-solid fa-eye"></i> view</button>
                             </td>
                         </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>

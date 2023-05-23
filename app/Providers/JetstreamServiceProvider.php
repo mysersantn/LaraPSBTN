@@ -9,6 +9,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Laravel\Fortify\Fortify;
+use App\Models\Mkantor as ModelMkantor;
 
 class JetstreamServiceProvider extends ServiceProvider
 {
@@ -37,6 +38,11 @@ class JetstreamServiceProvider extends ServiceProvider
             if ($user && Hash::check($request->password, $user->password)) {
                 return $user;
             }
+        });
+
+        Fortify::registerView(function () {
+            $cabang = ModelMkantor::where('j_kantor', 'C')->orderby('kd_kantor')->get();
+            return view('auth.register', compact('cabang'));
         });
     }
 

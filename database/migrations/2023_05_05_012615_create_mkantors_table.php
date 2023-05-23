@@ -12,7 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('mkantors', function (Blueprint $table) {
-            $table->string('kd_kantor')->primary();
+            $table->id();
+            $table->string('kd_kantor');
             $table->string('kantor');
             $table->string('alamat');
             $table->string('no_telp');
@@ -24,6 +25,8 @@ return new class extends Migration
             $table->string('tgl_buka');
             $table->string('inisial');
             $table->integer('target_pertahun');
+            $table->bigInteger('crt_userid');
+            $table->bigInteger('upd_userid');
             $table->timestamps();
         });
     }
