@@ -226,7 +226,7 @@
                                         Cetak Ulang BAP
                                     </th>
                                     <td class="px-6 py-4 text-left">
-                                        <a href="pendaftaran-pelanggan"
+                                        <a href="cetakulangbap"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
                                     </td>
                                 </tr>
@@ -237,7 +237,7 @@
                                         Cetak Ulang SPKO
                                     </th>
                                     <td class="px-6 py-4 text-left">
-                                        <a href="pendaftaran-pelanggan"
+                                        <a href="cetakulangspko"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
                                     </td>
                                 </tr>
@@ -248,7 +248,7 @@
                                         Cetak Ulang Pemberitahuan Biaya Pasang
                                     </th>
                                     <td class="px-6 py-4 text-left">
-                                        <a href="pendaftaran-pelanggan"
+                                        <a href="pemberitahuanbiayapasang"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
                                     </td>
                                 </tr>
@@ -259,7 +259,7 @@
                                         Cetak Ulang ABPD
                                     </th>
                                     <td class="px-6 py-4 text-left">
-                                        <a href="pendaftaran-pelanggan"
+                                        <a href="cetakulangabpd"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
                                     </td>
                                 </tr>
@@ -270,7 +270,7 @@
                                         Cetak Ulang Survey
                                     </th>
                                     <td class="px-6 py-4 text-left">
-                                        <a href="pendaftaran-pelanggan"
+                                        <a href="cetakulangsurvey"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
                                     </td>
                                 </tr>
@@ -281,7 +281,7 @@
                                         Cetak Ulang BPPB
                                     </th>
                                     <td class="px-6 py-4 text-left">
-                                        <a href="pendaftaran-pelanggan"
+                                        <a href="cetakulangbppb"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
                                     </td>
                                 </tr>
@@ -292,7 +292,7 @@
                                         Cetak Ulang Aktivasi
                                     </th>
                                     <td class="px-6 py-4 text-left">
-                                        <a href="pendaftaran-pelanggan"
+                                        <a href="cetakulangaktivasi"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
                                     </td>
                                 </tr>
@@ -303,7 +303,7 @@
                                         Cetak Ulang Form Pendaftaran
                                     </th>
                                     <td class="px-6 py-4 text-left">
-                                        <a href="pendaftaran-pelanggan"
+                                        <a href="cuformpendaftaran"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
                                     </td>
                                 </tr>
@@ -314,7 +314,7 @@
                                         Cetak Perjanjian Pelanggan
                                     </th>
                                     <td class="px-6 py-4 text-left">
-                                        <a href="pendaftaran-pelanggan"
+                                        <a href="cetakperjanjianpelanggan"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
                                     </td>
                                 </tr>
@@ -371,7 +371,7 @@
                                         Ubah Data Survey
                                     </th>
                                     <td class="px-6 py-4 text-left">
-                                        <a href="pendaftaran-pelanggan"
+                                        <a href="ubahdatasurvey"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
                                     </td>
                                 </tr>
@@ -382,7 +382,7 @@
                                         Ubah Data Pemasangan
                                     </th>
                                     <td class="px-6 py-4 text-left">
-                                        <a href="pendaftaran-pelanggan"
+                                        <a href="ubahdatapemasangan"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
                                     </td>
                                 </tr>
@@ -404,7 +404,7 @@
                                         Ubah Data Nama & Alamat
                                     </th>
                                     <td class="px-6 py-4 text-left">
-                                        <a href="pendaftaran-pelanggan"
+                                        <a href="ubahdatanama"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
                                     </td>
                                 </tr>
@@ -439,7 +439,7 @@
                                         Daftar Calon Pelanggan yang Bermohon Perbulan
                                     </th>
                                     <td class="px-6 py-4 text-left">
-                                        <a href="pendaftaran-pelanggan"
+                                        <a href="daftarcalonplgygbermohon"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
                                     </td>
                                 </tr>
@@ -450,7 +450,7 @@
                                         Daftar Calon Pelanggan yang Sudah Bayar
                                     </th>
                                     <td class="px-6 py-4 text-left">
-                                        <a href="pendaftaran-pelanggan"
+                                        <a href="daftarplgygsudahbayar"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
                                     </td>
                                 </tr>
@@ -461,7 +461,7 @@
                                         Daftar Permohonan Sudah Survey
                                     </th>
                                     <td class="px-6 py-4 text-left">
-                                        <a href="pendaftaran-pelanggan"
+                                        <a href="daftarpermohonansudahsurvey"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
                                     </td>
                                 </tr>
@@ -472,7 +472,7 @@
                                         Daftar Permohonan Sudah Bayar
                                     </th>
                                     <td class="px-6 py-4 text-left">
-                                        <a href="pendaftaran-pelanggan"
+                                        <a href="daftarpermohonanyangsudahbayar"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
                                     </td>
                                 </tr>
@@ -483,7 +483,7 @@
                                         Daftar Permohonan Sudah Pasang
                                     </th>
                                     <td class="px-6 py-4 text-left">
-                                        <a href="pendaftaran-pelanggan"
+                                        <a href="daftarpermohonansudahpasang"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
                                     </td>
                                 </tr>
@@ -494,7 +494,7 @@
                                         Daftar Permohonan Sambungan Baru
                                     </th>
                                     <td class="px-6 py-4 text-left">
-                                        <a href="pendaftaran-pelanggan"
+                                        <a href="daftarpermohonansambunganbaru"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
                                     </td>
                                 </tr>
@@ -505,7 +505,7 @@
                                         Daftar Calon Pelanggan Yang Sudah Pasang
                                     </th>
                                     <td class="px-6 py-4 text-left">
-                                        <a href="pendaftaran-pelanggan"
+                                        <a href="daftarcalonpelangganygsdhpasang"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
                                     </td>
                                 </tr>
@@ -516,7 +516,7 @@
                                         Daftar Pemasangan Sambungan Baru
                                     </th>
                                     <td class="px-6 py-4 text-left">
-                                        <a href="pendaftaran-pelanggan"
+                                        <a href="daftarpemasangansambunganbaru"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
                                     </td>
                                 </tr>
@@ -527,7 +527,7 @@
                                         Daftar Calon Pelanggan Yang Sudah Aktif
                                     </th>
                                     <td class="px-6 py-4 text-left">
-                                        <a href="pendaftaran-pelanggan"
+                                        <a href="daftarcalonpelangganyangsudahaktif"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
                                     </td>
                                 </tr>
@@ -538,7 +538,7 @@
                                         Daftar Calon Pelanggan Yang Sudah Pasang Belum Aktif
                                     </th>
                                     <td class="px-6 py-4 text-left">
-                                        <a href="pendaftaran-pelanggan"
+                                        <a href="sudahpasangbelumaktif"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
                                     </td>
                                 </tr>
@@ -549,7 +549,7 @@
                                         Daftar Calon Pelanggan Yang Sudah Bayar Belum Pasang
                                     </th>
                                     <td class="px-6 py-4 text-left">
-                                        <a href="pendaftaran-pelanggan"
+                                        <a href="sudahbayarbelumpasang"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
                                     </td>
                                 </tr>
@@ -560,7 +560,7 @@
                                         Daftar Calon Pelanggan Yang Belum Pasang
                                     </th>
                                     <td class="px-6 py-4 text-left">
-                                        <a href="pendaftaran-pelanggan"
+                                        <a href="calonpelangganyangbelumpasang"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
                                     </td>
                                 </tr>
@@ -571,7 +571,7 @@
                                         Daftar Calon Pelanggan Survey Tidak Berhasil
                                     </th>
                                     <td class="px-6 py-4 text-left">
-                                        <a href="pendaftaran-pelanggan"
+                                        <a href="calonpelanggansurveytidakberhasil"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
                                     </td>
                                 </tr>

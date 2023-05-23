@@ -43,7 +43,7 @@
                     Sambungan Baru *</label>
                 <select id="sambungan-baru"
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                    <option selected hidden>Jenis Smabungan</option>
+                    <option selected hidden>Jenis Sambungan</option>
                     <option value="AB">Air Bersih</option>
                     <option value="AL">Air Limbah</option>
                 </select>
