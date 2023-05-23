@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\{PendaftaranPelanggan,Ubahdatanama,Ubahdatasurvey,Ubahdatapemasangan,Cetakulangbap,Cetakulangspko,Pemberitahuanbiayapasang,Cetakulangabpd,Cetakulangsurvey,Cetakulangbppb,Cetakulangaktivasi,Cuformpendaftaran,Cetakperjanjianpelanggan};
 use App\Http\Livewire\{PendaftaranMain,PembayaranMain,PusatMain,SuperUserMain};
 use App\Http\Livewire\{MasterCabang,MasterGolonganBangunan,MasterJalan,MasterKecamatan,MasterKelurahan,MasterKodePos,MasterKotaKabupaten,MasterMaterial,MasterProvinsi,MasterRekanan,MasterTypeMeter,MasterWilayah};
-use App\Http\Livewire\{Daftarcalonplgygbermohon,Daftarplgygsudahbayar,Daftarpermohonansudahsurvey,Daftarpermohonanyangsudahbayar,Daftarpermohonansudahpasang,Daftarpermohonansambunganbaru,Daftarcalonpelangganygsdhpasang};
+use App\Http\Livewire\{Daftarcalonplgygbermohon,Daftarplgygsudahbayar,Daftarpermohonansudahsurvey,Daftarpermohonanyangsudahbayar,Daftarpermohonansudahpasang,Daftarpermohonansambunganbaru,Daftarcalonpelangganygsdhpasang,Daftarpemasangansambunganbaru,Daftarcalonpelangganyangsudahaktif};
 
 /*
 |--------------------------------------------------------------------------
@@ -55,6 +55,8 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
     Route::get('/daftarpermohonansudahpasang', Daftarpermohonansudahpasang::class)->name('daftarpermohonansudahpasang');
     Route::get('/daftarpermohonansambunganbaru', Daftarpermohonansambunganbaru::class)->name('daftarpermohonansambunganbaru');
     Route::get('/daftarcalonpelangganygsdhpasang', Daftarcalonpelangganygsdhpasang::class)->name('daftarcalonpelangganygsdhpasang');
+    Route::get('/daftarpemasangansambunganbaru', Daftarpemasangansambunganbaru::class)->name('daftarpemasangansambunganbaru');
+    Route::get('/daftarcalonpelangganyangsudahaktif', Daftarcalonpelangganyangsudahaktif::class)->name('daftarcalonpelangganyangsudahaktif');
 
 
     // Submenu Master Data

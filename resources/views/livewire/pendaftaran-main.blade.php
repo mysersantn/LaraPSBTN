@@ -516,7 +516,7 @@
                                         Daftar Pemasangan Sambungan Baru
                                     </th>
                                     <td class="px-6 py-4 text-left">
-                                        <a href="pendaftaran-pelanggan"
+                                        <a href="daftarpemasangansambunganbaru"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
                                     </td>
                                 </tr>
@@ -527,7 +527,7 @@
                                         Daftar Calon Pelanggan Yang Sudah Aktif
                                     </th>
                                     <td class="px-6 py-4 text-left">
-                                        <a href="pendaftaran-pelanggan"
+                                        <a href="daftarcalonpelangganyangsudahaktif"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
                                     </td>
                                 </tr>
