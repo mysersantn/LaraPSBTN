@@ -1,7 +1,7 @@
 <div>
     <div class="p-6 lg:p-8 bg-white border-b border-gray-200 rounded-xl mt-8">
         <h1 class="text-2xl font-medium text-gray-900">
-            Daftar Permohonan Sudah Survey
+            Daftar Permohonan Sudah Bayar
         </h1>
         <hr class="mb-6">
         <form>
