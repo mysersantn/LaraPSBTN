@@ -439,7 +439,7 @@
                                         Daftar Calon Pelanggan yang Bermohon Perbulan
                                     </th>
                                     <td class="px-6 py-4 text-left">
-                                        <a href="pendaftaran-pelanggan"
+                                        <a href="daftarcalonplgygbermohon"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
                                     </td>
                                 </tr>
