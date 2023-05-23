@@ -560,7 +560,7 @@
                                         Daftar Calon Pelanggan Yang Belum Pasang
                                     </th>
                                     <td class="px-6 py-4 text-left">
-                                        <a href="pendaftaran-pelanggan"
+                                        <a href="calonpelangganyangbelumpasang"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
                                     </td>
                                 </tr>
@@ -571,7 +571,7 @@
                                         Daftar Calon Pelanggan Survey Tidak Berhasil
                                     </th>
                                     <td class="px-6 py-4 text-left">
-                                        <a href="pendaftaran-pelanggan"
+                                        <a href="calonpelanggansurveytidakberhasil"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Buka</a>
                                     </td>
                                 </tr>
