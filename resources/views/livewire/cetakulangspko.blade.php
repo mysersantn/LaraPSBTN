@@ -1,7 +1,7 @@
 <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
     <div class="p-6 lg:p-8 bg-white border-b border-gray-200 rounded-xl mt-8">
         <h1 class="text-2xl font-medium text-gray-900">
-           Cetak Ulang BAP
+           Cetak Ulang SPKO
         </h1>
         <hr class="mb-6">
         <form>
