@@ -62,7 +62,7 @@
                                     clip-rule="evenodd"></path>
                             </svg>
                         </div>
-                        <input wire:model="general_search" type="text" id="table-search"
+                        <input wire:model="search" type="text" id="table-search"
                             class="block p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg w-80 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                             placeholder="Search for items">
                     </div>
@@ -92,11 +92,11 @@
                     </thead>
                     <tbody>
                         @foreach ($masterRekanan as $key => $item)
-                            <tr wire:key="item-{{ $item->id }}"
+                            <tr
                                 class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                                 <th scope="row"
                                     class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    {{ $loop->iteration }}
+                                    {{$masterRekanan->firstItem() +$key}}
                                 </th>
                                 <td class="px-6 py-4">
                                     {{ $item->kd_kantor }}
@@ -119,9 +119,7 @@
                         @endforeach
                     </tbody>
                 </table>
-                {{ $masterRekanan->appends(['general_search' => $general_search])->links() }}
-
-                {{-- <div class="py-4 text-xs">{{ $masterRekanan->links() }}</div> --}}
+                <div class="py-4 text-xs">{{ $masterRekanan->links() }}</div>
             </div>
         </div>
     </div>
