@@ -11,8 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('mkdpos', function (Blueprint $table) {
+        Schema::create('mbangunans', function (Blueprint $table) {
             $table->id();
+            $table->string('kd_bangunan');
+            $table->string('kd_tarif');
+            $table->string('keterangan');
+            $table->string('luas_bangunan');
+            $table->string('crt_userid');
+            $table->string('upd_userid');
             $table->timestamps();
         });
     }
@@ -22,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('mkdpos');
+        Schema::dropIfExists('mbangunans');
     }
 };

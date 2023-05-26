@@ -13,6 +13,18 @@ return new class extends Migration
     {
         Schema::create('mmaterials', function (Blueprint $table) {
             $table->id();
+            $table->string('kd_material',10);
+            $table->string('material',100);
+            $table->string('satuan',50);
+            $table->string('ukuran',100);
+            $table->float('harga');
+            $table->string('is_default');
+            $table->string('jml',50);
+            $table->string('posisi',60);
+            $table->string('jenis');
+            $table->string('invest');
+            $table->string('crt_userid');
+            $table->string('upd_userid');
             $table->timestamps();
         });
     }

@@ -37,7 +37,8 @@
                                 d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                                 clip-rule="evenodd"></path>
                         </svg>
-                        <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">Master Golongan Bangunan</span>
+                        <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">Master Golongan
+                            Bangunan</span>
                     </div>
                 </li>
             </ol>
@@ -90,28 +91,32 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr
-                            class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row"
-                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                1
-                            </th>
-                            <td class="px-6 py-4">
-                                2
-                            </td>
-                            <td class="px-6 py-4">
-                                3
-                            </td>
-                            <td class="px-6 py-4">
-                                4
-                            </td>
-                            <td class="px-6 py-4">
-                                5
-                            </td>
-                            <td class="px-6 py-4">
-                                <button class="w-max bg-blue-800 rounded-lg text-white py-1 px-4 hover:bg-blue-950"><i class="fa-solid fa-eye"></i> view</button>
-                            </td>
-                        </tr>
+                        @foreach ($masterGolonganBangunan as $item)
+                            <tr
+                                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <th scope="row"
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    {{ $loop->iteration }}
+                                </th>
+                                <td class="px-6 py-4">
+                                    {{ $item->kd_bangunan }}
+                                </td>
+                                <td class="px-6 py-4">
+                                    {{ $item->keterangan }}
+                                </td>
+                                <td class="px-6 py-4">
+                                    {{ $item->luas_bangunan }}
+                                </td>
+                                <td class="px-6 py-4">
+                                    {{ $item->kd_tarif }}
+                                </td>
+                                <td class="px-6 py-4">
+                                    <button
+                                        class="w-max bg-blue-800 rounded-lg text-white py-1 px-4 hover:bg-blue-950"><i
+                                            class="fa-solid fa-eye"></i> view</button>
+                                </td>
+                            </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>

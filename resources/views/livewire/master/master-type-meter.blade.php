@@ -85,23 +85,25 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach ($masterTypeMeter as $item)
                         <tr
                             class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                             <th scope="row"
                                 class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                1
+                                {{$loop->iteration}}
                             </th>
                             <td class="px-6 py-4">
-                                2
+                                {{$item->kd_typemeter}}
                             </td>
                             <td class="px-6 py-4">
-                                3
+                                {{$item->ket_meter}}
                             </td>
                             <td class="px-6 py-4">
                                 <button class="w-max bg-blue-800 rounded-lg text-white py-1 px-4 hover:bg-blue-950"><i
                                         class="fa-solid fa-eye"></i> view</button>
                             </td>
                         </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>

@@ -82,30 +82,32 @@
                                 Nama Wilayah
                             </th>
                             <th scope="col" class="px-6 py-3">
-                                Detail
+                                Keterangan
                             </th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr
-                            class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <th scope="row"
-                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                1
-                            </th>
-                            <td class="px-6 py-4">
-                                2
-                            </td>
-                            <td class="px-6 py-4">
-                                3
-                            </td>
-                            <td class="px-6 py-4">
-                                4
-                            </td>
-                            <td class="px-6 py-4">
-                                <button class="w-max bg-blue-800 rounded-lg text-white py-1 px-4 hover:bg-blue-950"><i class="fa-solid fa-eye"></i> view</button>
-                            </td>
-                        </tr>
+                       @foreach ($masterWilayah as $item)
+                       <tr
+                       class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                       <th scope="row"
+                           class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                           {{$loop->iteration}}
+                       </th>
+                       <td class="px-6 py-4">
+                        {{$item->mkantor->kantor}}
+                       </td>
+                       <td class="px-6 py-4">
+                        {{$item->kd_wilayah}}
+                       </td>
+                       <td class="px-6 py-4">
+                        {{$item->nm_wilayah}}
+                       </td>
+                       <td class="px-6 py-4">
+                        {{$item->ket_wilayah}}
+                       </td>
+                   </tr>
+                       @endforeach
                     </tbody>
                 </table>
             </div>

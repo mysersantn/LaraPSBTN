@@ -11,8 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('mbangunans', function (Blueprint $table) {
+        Schema::create('mkdpos', function (Blueprint $table) {
             $table->id();
+            $table->string('kd_pos',5);
+            $table->string('kd_prop',2);
+            $table->string('kd_kab',2);
+            $table->string('kd_kec',3);
+            $table->string('kd_kel',3);
+            $table->string('crt_userid');
+            $table->string('upd_userid');
             $table->timestamps();
         });
     }
@@ -22,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('mbangunans');
+        Schema::dropIfExists('mkdpos');
     }
 };
