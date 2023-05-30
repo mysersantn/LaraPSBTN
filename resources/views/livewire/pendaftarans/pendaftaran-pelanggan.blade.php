@@ -1,4 +1,9 @@
 <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+
+    @if (session()->has('message'))
+        @include('components.alert-message-my')
+    @endif
+
     <div class="p-6 lg:p-8 bg-white border-b border-gray-200 rounded-xl mt-8">
 
         <!-- Breadcrumb -->
@@ -37,8 +42,9 @@
                                 d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                                 clip-rule="evenodd"></path>
                         </svg>
-                        <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">Pendaftaran Pelanggan Sambungan Baru
-                            </span>
+                        <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">Pendaftaran
+                            Pelanggan Sambungan Baru
+                        </span>
                     </div>
                 </li>
             </ol>
@@ -49,7 +55,7 @@
                 Pendaftaran Pelanggan Sambungan Baru
             </h1>
             <hr class="mb-6">
-            <form>
+            <div>
                 <div class="mb-6">
                     <label for="tanggal-sistem"
                         class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tanggal
@@ -57,12 +63,14 @@
                     <div date-rangepicker class="flex items-center">
                         <div class="relative">
                             <input wire:model="tgl_today" type="date" name="tgl_today" id="tgl_today"
-                            class="bg-gray-100 border border-gray-300 text-gray-400 text-sm rounded-lg block w-full p-2.5" wire:ignore disabled />
+                                class="bg-gray-100 border border-gray-300 text-gray-400 text-sm rounded-lg block w-full p-2.5"
+                                wire:ignore disabled />
                         </div>
                         <span class="mx-4 text-gray-500">Tanggal SPL</span>
                         <div class="relative">
                             <input wire:model="tgl_daftar" type="date" name="tgl_daftar" id="tgl_daftar"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Select date" required />
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="Select date" required />
                             @error('tgl_daftar')
                                 <span class="text-red-500 text-sm">{{ $message }}</span>
                             @enderror
@@ -81,194 +89,247 @@
                     </select>
                 </div>
                 <div class="mb-6">
-                    <label for="sambungan-baru"
-                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pilih
+                    <label for="kd_cabang" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pilih
                         Kantor Cabang *</label>
-                    <select id="sambungan-baru"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <select wire:model="kd_cabang" id="kd_cabang"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        required>
                         <option selected hidden>Kantor Cabang</option>
                         @foreach ($cabang as $item)
-                        <option value="{{$item->kd_kantor}}">{{$item->kantor}}</option>
+                            <option value="{{ $item->kd_kantor }}">{{ $item->kantor }}</option>
                         @endforeach
                     </select>
+                    @error('kd_cabang')
+                        <span class="text-red-500 text-sm">{{ $message }}</span>
+                    @enderror
                 </div>
                 <div class="mb-6">
-                    <label for="nama-pemohon" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama
+                    <label for="pemohon" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama
                         Pemohon
                         *</label>
-                    <input type="text" id="nama-pemohon"
+                    <input wire:model="pemohon" type="text" id="pemohon"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="" required>
+                    @error('pemohon')
+                        <span class="text-red-500 text-sm">{{ $message }}</span>
+                    @enderror
                 </div>
                 <div class="mb-6">
-                    <label for="no-hp" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">No HP
+                    <label for="no_telp_pemohon" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">No
+                        HP
                         Pemohon
                         *</label>
-                    <input type="text" id="no-hp"
+                    <input wire:model="no_telp_pemohon" type="text" id="no_telp_pemohon"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="" required>
+                    @error('no_telp_pemohon')
+                        <span class="text-red-500 text-sm">{{ $message }}</span>
+                    @enderror
                 </div>
                 <div class="mb-6">
-                    <label for="alamat-pemohon"
+                    <label for="almt_pemohon"
                         class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Alamat
                         Pemohon *</label>
-                    <textarea id="alamat-pemohon" rows="4"
+                    <textarea wire:model="almt_pemohon" id="almt_pemohon" rows="4"
                         class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="Tulis alamat lengkap pemohon..."></textarea>
+                    @error('almt_pemohon')
+                        <span class="text-red-500 text-sm">{{ $message }}</span>
+                    @enderror
                 </div>
                 <div class="mb-6">
-                    <label for="nama-pemilik"
-                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama
+                    <label for="pemilik" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama
                         Pemilik
                         *</label>
-                    <input type="text" id="nama-pemilik"
+                    <input wire:model="pemilik" type="text" id="pemilik"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="" required>
+                    @error('pemilik')
+                        <span class="text-red-500 text-sm">{{ $message }}</span>
+                    @enderror
                 </div>
                 <div class="mb-6">
-                    <label for="no-ktp" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">No KTP
+                    <label for="no_ktp" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">No KTP
                         *</label>
-                    <input type="text" id="no-ktp"
+                    <input wire:model="no_ktp" type="text" id="no_ktp"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="" required>
+                    @error('no_ktp')
+                        <span class="text-red-500 text-sm">{{ $message }}</span>
+                    @enderror
                 </div>
                 <div class="mb-6">
-                    <label for="npwp" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">NPWP
+                    <label for="no_npwp" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">NPWP
                     </label>
-                    <input type="text" id="npwp"
+                    <input wire:model="no_npwp" type="text" id="no_npwp"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="">
                 </div>
                 <div class="mb-6">
-                    <label for="nomor-telp-pemilik"
-                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nomor Telp Pemilik
+                    <label for="no_telp" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nomor
+                        Telp Pemilik
                     </label>
-                    <input type="text" id="nomor-telp-pemilik"
+                    <input wire:model="no_telp" type="text" id="no_telp"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="">
                 </div>
                 <div class="mb-6">
-                    <label for="nomor-hp-pemilik"
-                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nomor
+                    <label for="no_hp" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nomor
                         HP Pemilik
                         *</label>
-                    <input type="text" id="nomor-hp-pemilik"
+                    <input wire:model="no_hp" type="text" id="no_hp"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="" required>
+                    @error('no_hp')
+                        <span class="text-red-500 text-sm">{{ $message }}</span>
+                    @enderror
                 </div>
 
                 <hr class="mb-6">
+
                 <div class="mb-6">
-                    <label for="provinsi"
-                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pilih
+                    <label for="kd_prop" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pilih
                         Provinsi *</label>
-                    <select wire:model="kd_prop" id="provinsi" wire:change="getKotaKabupaten"
+                    <select wire:model="kd_prop" id="kd_prop" wire:change="getKotaKabupaten"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                         <option selected hidden>Provinsi</option>
                         @if (!is_null($provinsi))
-                        @foreach ($provinsi as $item)
-                        <option value="{{$item->kd_prop}}">{{$item->provinsi}}</option>
-                        @endforeach
+                            @foreach ($provinsi as $item)
+                                <option value="{{ $item->kd_prop }}">{{ $item->provinsi }}</option>
+                            @endforeach
                         @endif
                     </select>
+                    @error('kd_prop')
+                        <span class="text-red-500 text-sm">{{ $message }}</span>
+                    @enderror
                 </div>
                 <div class="mb-6">
-                    <label for="provinsi"
-                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pilih
+                    <label for="kd_kab" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pilih
                         Kabupaten/Kota *</label>
-                    <select wire:model="kd_kab" id="kabupatenKota" wire:change="getKecamatan"
+                    <select wire:model="kd_kab" id="kd_kab" wire:change="getKecamatan"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                         <option selected hidden>Kabupaten/Kota</option>
                         @if (!is_null($kotaKabupaten))
-                        @foreach ($kotaKabupaten as $item)
-                        <option value="{{$item->kd_kab}}">{{$item->kabupaten}}</option>
-                        @endforeach
+                            @foreach ($kotaKabupaten as $item)
+                                <option value="{{ $item->kd_kab }}">{{ $item->kabupaten }}</option>
+                            @endforeach
                         @endif
                     </select>
+                    @error('kd_kab')
+                        <span class="text-red-500 text-sm">{{ $message }}</span>
+                    @enderror
                 </div>
                 <div class="mb-6">
-                    <label for="kecamatan"
-                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pilih
+                    <label for="kd_kec" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pilih
                         Kecamatan *</label>
-                    <select wire:model="kd_kec" id="kecamatan" wire:change="getKelurahan"
+                    <select wire:model="kd_kec" id="kd_kec" wire:change="getKelurahan"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                         <option selected hidden>Kecamatan</option>
                         @if (!is_null($kecamatan))
-                        @foreach ($kecamatan as $item)
-                        <option value="{{$item->kd_kec}}">{{$item->kecamatan}}</option>
-                        @endforeach
+                            @foreach ($kecamatan as $item)
+                                <option value="{{ $item->kd_kec }}">{{ $item->kecamatan }}</option>
+                            @endforeach
                         @endif
                     </select>
+                    @error('kd_kec')
+                        <span class="text-red-500 text-sm">{{ $message }}</span>
+                    @enderror
                 </div>
                 <div class="mb-6">
-                    <label for="kelurahan"
-                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pilih
+                    <label for="kd_kel" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pilih
                         Kelurahan *</label>
-                    <select wire:model="kd_kel" id="kelurahan" wire:change="getKodePos"
+                    <select wire:model="kd_kel" id="kd_kel" wire:change="getKodePos"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                         <option selected hidden>Kelurahan</option>
                         @if (!is_null($kelurahan))
-                        @foreach ($kelurahan as $item)
-                        <option value="{{$item->kd_kel}}">{{$item->kelurahan}}</option>
-                        @endforeach
+                            @foreach ($kelurahan as $item)
+                                <option value="{{ $item->kd_kel }}">{{ $item->kelurahan }}</option>
+                            @endforeach
                         @endif
                     </select>
+                    @error('kd_kel')
+                        <span class="text-red-500 text-sm">{{ $message }}</span>
+                    @enderror
                 </div>
                 <div class="mb-6">
-                    <label for="kodepos"
-                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pilih
+                    <label for="kd_pos" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pilih
                         Kode POS *</label>
-                    <select wire:model="kd_pos" id="kodepos"
+                    <select wire:model="kd_pos" id="kd_pos"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                         <option selected hidden>Kode Pos</option>
                         @if (!is_null($kodepos))
-                        @foreach ($kodepos as $item)
-                        <option value="{{$item->kd_pos}}">{{$item->kd_pos}}</option>
-                        @endforeach
+                            @foreach ($kodepos as $item)
+                                <option value="{{ $item->kd_pos }}">{{ $item->kd_pos }}</option>
+                            @endforeach
                         @endif
                     </select>
+                    @error('kd_pos')
+                        <span class="text-red-500 text-sm">{{ $message }}</span>
+                    @enderror
                 </div>
+
                 <div class="mb-6">
-                    <label for="alamat-pemasangan"
-                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Alamat Pemasangan
-                        *</label>
-                    <input type="text" id="alamat-pemasangan"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                        placeholder="" required>
+                    <label for="almt_pasang"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Alamat
+                        Pemasangan *</label>
+                    <textarea wire:model="almt_pasang" id="almt_pasang" rows="4"
+                        class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Tulis alamat lengkap pemasangan..." required></textarea>
+                    @error('almt_pasang')
+                        <span class="text-red-500 text-sm">{{ $message }}</span>
+                    @enderror
                 </div>
-                <div class="mb-6">
-                    <label for="no-rumah" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">No
-                        Rumah
-                        *</label>
-                    <input type="text" id="no-rumah"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                        placeholder="" required>
-                </div>
-                <div class="mb-6">
-                    <label for="rt-rw" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">RT / RW
-                    </label>
-                    <input type="text" id="rt-rw"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                        placeholder="">
+
+                <div class="sm:flex gap-8">
+                    <div class="mb-6">
+                        <label for="no_rumah" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">No
+                            Rumah
+                            *</label>
+                        <input wire:model="no_rumah" type="text" id="no_rumah"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="" required>
+                        @error('no_rumah')
+                            <span class="text-red-500 text-sm">{{ $message }}</span>
+                        @enderror
+                    </div>
+                    <div class="mb-6">
+                        <label for="rt" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">RT
+                        </label>
+                        <input wire:model="rt" type="text" id="rt"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="">
+                    </div>
+                    <div class="mb-6">
+                        <label for="rw" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">RW
+                        </label>
+                        <input wire:model="rw" type="text" id="rw"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="">
+                    </div>
+                    <div class="mb-6 w-full">
+                        <label for="email"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email
+                        </label>
+                        <input wire:model="email" type="email" id="email"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="">
+                    </div>
                 </div>
 
                 <hr class="mb-6">
 
-                <div class="mb-6">
-                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email
-                    </label>
-                    <input type="text" id="email"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                        placeholder="">
-                </div>
-                <div class="mb-6">
+                {{-- <div class="mb-6">
                     <label for="peruntukan-penggunaan-air"
                         class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Peruntukan Penggunaan Air
                         *</label>
                     <input type="text" id="peruntukan-penggunaan-air"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="" required>
+                    @error('tgl_daftar')
+                        <span class="text-red-500 text-sm">{{ $message }}</span>
+                    @enderror
                 </div>
+
                 <div class="mb-6">
                     <label for="kondisi-persil"
                         class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Kondisi Persil
@@ -276,26 +337,30 @@
                     <input type="text" id="kondisi-persil"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="" required>
-                </div>
+                    @error('tgl_daftar')
+                        <span class="text-red-500 text-sm">{{ $message }}</span>
+                    @enderror
+                </div> --}}
+
                 <div class="mb-6">
-                    <label for="luas-bangunan"
-                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Luas
+                    <label for="luas_persil" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Luas
                         Bangunan</label>
-                    <input type="text" id="luas-bangunan"
+                    <input wire:model="luas_persil" type="text" id="luas_persil"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="">
                 </div>
                 <div class="mb-6">
-                    <label for="jumlah-hunian"
+                    <label for="jml_penghuni"
                         class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Jumlah
                         Hunian</label>
-                    <input type="text" id="jumlah-hunian"
+                    <input wire:model="jml_penghuni" type="text" id="jml_penghuni"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="">
                 </div>
-                <button type="submit"
+
+                <button wire:click="store()"
                     class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Simpan</button>
-            </form>
+            </div>
         </div>
     </div>
 </div>
