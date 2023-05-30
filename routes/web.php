@@ -65,6 +65,7 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
 
 
     // Submenu Master Data
+    Route::get('/master-rekanan', MasterRekanan::class)->name('master-rekanan');
     Route::get('/master-cabang', MasterCabang::class)->name('master-cabang');
     Route::get('/master-golongan-bangunan', MasterGolonganBangunan::class)->name('master-golongan-bangunan');
     Route::get('/master-jalan', MasterJalan::class)->name('master-jalan');
@@ -74,7 +75,6 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
     Route::get('/master-kota-kabupaten', MasterKotaKabupaten::class)->name('master-kota-kabupaten');
     Route::get('/master-material', MasterMaterial::class)->name('master-material');
     Route::get('/master-provinsi', MasterProvinsi::class)->name('master-provinsi');
-    Route::get('/master-rekanan', MasterRekanan::class)->name('master-rekanan');
     Route::get('/master-type-meter', MasterTypeMeter::class)->name('master-type-meter');
     Route::get('/master-wilayah', MasterWilayah::class)->name('master-wilayah');
 

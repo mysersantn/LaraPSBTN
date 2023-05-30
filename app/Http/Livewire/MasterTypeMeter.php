@@ -3,7 +3,7 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
-use App\Models\Mtypemeter as ModelMtypemeter;
+use App\Models\Mtypemeter as modelTypemeter;
 
 
 class MasterTypeMeter extends Component
@@ -12,8 +12,8 @@ class MasterTypeMeter extends Component
 
     public function render()
     {
-        $this->masterTypeMeter=ModelMtypemeter::orderby('kd_typemeter')->get();
+        $this->masterTypeMeter=modelTypemeter::orderby('kd_typemeter')->get();
 
-        return view('livewire.master.master-type-meter');
+        return view('livewire.masters.typemter.master-type-meter');
     }
 }

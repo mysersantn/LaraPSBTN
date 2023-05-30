@@ -3,8 +3,7 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
-use App\Models\Rprovinsi as ModelProvinsi;
-
+use App\Models\Rprovinsi as modelProvinsi;
 
 class MasterProvinsi extends Component
 {
@@ -12,7 +11,7 @@ class MasterProvinsi extends Component
 
     public function render()
     {
-        $this->masterProvinsi=ModelProvinsi::where('kd_prop','<>','00')->orderby('kd_prop')->get();
-        return view('livewire.master.master-provinsi');
+        $this->masterProvinsi=modelProvinsi::where('kd_prop', 12)->orderby('kd_prop')->get();
+        return view('livewire.masters.provinsi.master-provinsi');
     }
 }

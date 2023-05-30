@@ -3,7 +3,7 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
-use App\Models\Rkelurahan as ModelMkelurahan;
+use App\Models\Rkelurahan as modelKelurahan;
 
 class MasterKelurahan extends Component
 {
@@ -11,7 +11,7 @@ class MasterKelurahan extends Component
 
     public function render()
     {
-        $this->masterKelurahan=ModelMkelurahan::where('kd_prop','<>','00')->orderby('kd_kel')->get();
-        return view('livewire.master.master-kelurahan');
+        $this->masterKelurahan=modelKelurahan::where('kd_prop', 12)->orderby('kd_kel')->get();
+        return view('livewire.masters.kelurahan.master-kelurahan');
     }
 }

@@ -11,8 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('mtarifs', function (Blueprint $table) {
+        Schema::create('mtarifbiayas', function (Blueprint $table) {
             $table->id();
+            $table->string('kd_tarif',2);
+            $table->date('eff_tgl');
+            $table->string('kd_biaya',2);
+            $table->float('rp_biaya');
+            $table->string('desc',60);
+            $table->string('crt_userid');
+            $table->string('upd_userid');
             $table->timestamps();
         });
     }
@@ -22,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('mtarifs');
+        Schema::dropIfExists('mtarifbiayas');
     }
 };

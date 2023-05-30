@@ -20,8 +20,8 @@
 
     <!-- Styles -->
     @livewireStyles
-    <script src="../path/to/flowbite/dist/datepicker.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/datepicker.min.js"></script>
+    {{-- <script src="../path/to/flowbite/dist/datepicker.js"></script> --}}
+    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/datepicker.min.js"></script> --}}
 
     <script src="https://kit.fontawesome.com/52e3311a73.js" crossorigin="anonymous"></script>
 
@@ -29,9 +29,9 @@
 
 <body class="font-sans antialiased">
     {{-- Loading screen --}}
-    <div id="loading-screen">
+    {{-- <div id="loading-screen">
         <livewire:loading />
-    </div>
+    </div> --}}
 
     <x-banner />
 

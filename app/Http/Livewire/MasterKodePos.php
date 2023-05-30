@@ -3,7 +3,7 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
-use App\Models\Mkdpos as ModelMkdpos;
+use App\Models\Mkdpos as modelKdpos;
 
 class MasterKodePos extends Component
 {
@@ -11,7 +11,7 @@ class MasterKodePos extends Component
 
     public function render()
     {
-        $this->masterKodePos=ModelMkdpos::where('kd_pos','<>','00000')->where('kd_prop', 12)->orderby('kd_pos')->get();
-        return view('livewire.master.master-kode-pos');
+        $this->masterKodePos=modelKdpos::where('kd_prop', 12)->orderby('kd_pos')->get();
+        return view('livewire.masters.kodepos.master-kode-pos');
     }
 }

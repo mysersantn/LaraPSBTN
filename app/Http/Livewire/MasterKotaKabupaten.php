@@ -3,7 +3,7 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
-use App\Models\Rkabupaten as ModelMkabupaten;
+use App\Models\Rkabupaten as modelKotaKabupaten;
 
 class MasterKotaKabupaten extends Component
 {
@@ -11,7 +11,7 @@ class MasterKotaKabupaten extends Component
 
     public function render()
     {
-        $this->masterKabupatenKota=ModelMkabupaten::where('kd_prop','<>','00')->orderby('kd_kab')->get();
-        return view('livewire.master.master-kota-kabupaten');
+        $this->masterKabupatenKota=modelKotaKabupaten::where('kd_prop', 12)->orderby('kd_kab')->get();
+        return view('livewire.masters.kotakabupaten.master-kota-kabupaten');
     }
 }

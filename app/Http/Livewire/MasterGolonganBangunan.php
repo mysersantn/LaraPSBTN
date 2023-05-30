@@ -3,7 +3,7 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
-use App\Models\Mbangunan as ModelMbangunan;
+use App\Models\Mbangunan as modelBangunan;
 
 class MasterGolonganBangunan extends Component
 {
@@ -11,7 +11,7 @@ class MasterGolonganBangunan extends Component
 
     public function render()
     {
-        $this->masterGolonganBangunan=ModelMbangunan::orderby('kd_bangunan')->get();
-        return view('livewire.master.master-golongan-bangunan');
+        $this->masterGolonganBangunan=modelBangunan::orderby('kd_bangunan')->get();
+        return view('livewire.masters.golonganbangunan.master-golongan-bangunan');
     }
 }
