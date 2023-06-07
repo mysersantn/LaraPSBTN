@@ -23,8 +23,8 @@ return new class extends Migration
             $table->string('posisi',60);
             $table->string('jenis');
             $table->string('invest');
-            $table->string('crt_userid');
-            $table->string('upd_userid');
+            $table->string('crt_userid')->nullable();
+            $table->bigInteger('upd_userid')->nullable();
             $table->timestamps();
         });
     }

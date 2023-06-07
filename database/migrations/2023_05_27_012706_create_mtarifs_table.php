@@ -16,10 +16,10 @@ return new class extends Migration
             $table->string('kd_tarif',2);
             $table->string('golongan_tarif',8);
             $table->string('kd_kelompok',2);
-            $table->string('descr',60);
+            $table->string('descr',60)->nullable();
             $table->string('gol_tarifgis',60);
             $table->string('crt_userid');
-            $table->string('upd_userid');
+            $table->bigInteger('upd_userid')->nullable();
             $table->timestamps();
         });
     }

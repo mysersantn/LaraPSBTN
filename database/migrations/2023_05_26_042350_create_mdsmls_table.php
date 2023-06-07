@@ -24,7 +24,7 @@ return new class extends Migration
             $table->string('kd_prop',2);
             $table->string('parent_jalan',7);
             $table->string('crt_userid');
-            $table->string('upd_userid');
+            $table->bigInteger('upd_userid')->nullable();
             $table->timestamps();
         });
     }

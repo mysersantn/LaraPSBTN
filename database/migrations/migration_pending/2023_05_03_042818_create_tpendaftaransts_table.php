@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('ket_status');
             $table->string('crt_userid');
             $table->date('crt_tgl');
-            $table->string('upd_userid');
+            $table->bigInteger('upd_userid')->nullable();
             $table->date('upd_tgl');
             $table->timestamps();
         });

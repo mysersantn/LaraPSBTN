@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('max_m3');
             $table->float('rp_m3');
             $table->string('crt_userid');
-            $table->string('upd_userid');
+            $table->bigInteger('upd_userid')->nullable();
             $table->timestamps();
         });
     }

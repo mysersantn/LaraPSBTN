@@ -17,9 +17,9 @@ return new class extends Migration
             $table->date('eff_tgl');
             $table->string('kd_biaya',2);
             $table->float('rp_biaya');
-            $table->string('desc',60);
+            $table->string('desc',60)->nullable();
             $table->string('crt_userid');
-            $table->string('upd_userid');
+            $table->bigInteger('upd_userid')->nullable();
             $table->timestamps();
         });
     }

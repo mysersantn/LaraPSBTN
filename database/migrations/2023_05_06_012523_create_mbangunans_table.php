@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('keterangan');
             $table->string('luas_bangunan');
             $table->string('crt_userid');
-            $table->string('upd_userid');
+            $table->bigInteger('upd_userid')->nullable();
             $table->timestamps();
         });
     }

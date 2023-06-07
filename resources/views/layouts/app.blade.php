@@ -59,12 +59,12 @@
 
     {{-- Loading screen js  --}}
     <script>
-        document.addEventListener('livewire:loading', function () {
+        document.addEventListener('livewire:loading', function() {
             document.getElementById('loading-screen').style.display = 'block';
         });
 
-        document.addEventListener('livewire:load', function () {
-            setTimeout(function () {
+        document.addEventListener('livewire:load', function() {
+            setTimeout(function() {
                 document.getElementById('loading-screen').style.display = 'none';
             }, 2000); // Ubah nilai 2000 menjadi waktu delay yang diinginkan (dalam milidetik)
         });

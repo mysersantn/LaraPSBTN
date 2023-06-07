@@ -17,7 +17,7 @@ return new class extends Migration
             $table->date('eff_tgl');
             $table->float('rp_nilai');
             $table->string('crt_userid');
-            $table->string('upd_userid');
+            $table->bigInteger('upd_userid')->nullable();
             $table->timestamps();
         });
     }

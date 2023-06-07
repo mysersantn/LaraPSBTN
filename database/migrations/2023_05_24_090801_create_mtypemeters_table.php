@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('kd_typemeter');
             $table->string('ket_meter');
             $table->string('crt_userid');
-            $table->string('upd_userid');
+            $table->bigInteger('upd_userid')->nullable();
             $table->timestamps();
         });
     }

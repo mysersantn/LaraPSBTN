@@ -13,7 +13,8 @@ use App\Models\Mkdpos as modelKdpos;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Collection;
-
+use Livewire\WithProperties;
+use Illuminate\Support\Facades\DB;
 
 class PendaftaranPelanggan extends Component
 {
@@ -60,17 +61,40 @@ class PendaftaranPelanggan extends Component
        $no_bonmeter,
        $tipe_standart;
 
+    public $pencarian_peta;
 
-    public function mount()
+    protected $listeners = ['updateMapsCoordinates'];
+
+    public function generateKdDaftar()
     {
-        // $this->tgl_today = Carbon::now()->format('Y-m-d H:i:s');
+        // Ambil tanggal sekarang
+        $now = Carbon::now();
+        $year = $now->format('y');
+        $month = $now->format('m');
+        $day = $now->format('d');
+        // Ambil auto-increment dari database terakhir
+        $lastId = DB::table('tpendaftarans')->orderBy('id', 'desc')->value('id');
+        $autoIncrement = $lastId + 1;
+        // Format nomor dengan zero-padding
+        $kd_daftar = sprintf('%02d%02d%02d%05d', $year, $month, $day, $autoIncrement);
+        // Set nilai kd_daftar
+        $this->kd_daftar = $kd_daftar;
+    }
+
+    public function updateMapsCoordinates($lat, $lng)
+    {
+        $this->maps_lat = $lat;
+        $this->maps_long = $lng;
     }
 
     public function render()
     {
         $this->tgl_today = Carbon::now()->format('Y-m-d');
-        $this->cabang = modelCabang::where('j_kantor', 'C')->get();
+        $this->cabang = modelCabang::where('j_kantor', 'C')->orderby('kd_kantor')->get();
         $this->provinsi = modelProvinsi::where('kd_prop', 12)->get();
+
+        $this->dispatchBrowserEvent('loadMap', ['pencarian_peta' => $this->pencarian_peta]);
+
         return view('livewire.pendaftarans.pendaftaran-pelanggan');
     }
 
@@ -126,7 +150,10 @@ class PendaftaranPelanggan extends Component
     $this->rw = '';
     $this->luas_persil = '';
     $this->email = '';
+    $this->maps_lat = '';
+    $this->maps_long = '';
     }
+
 
     public function store()
     {
@@ -150,10 +177,13 @@ class PendaftaranPelanggan extends Component
             'required' => 'Kolom :attribute harus diisi.',
         ]);
 
+        $this->generateKdDaftar();
 
         $insert_pendaftaran = modelPendaftaran::create([
-            // 'kd_daftar' => $this->kd_daftar,
+            'kd_daftar' => $this->kd_daftar,
             'tgl_daftar' => Carbon::parse($this->tgl_daftar)->format('Y-m-d H:i:s'),
+            's_daftar' => 0,
+            'j_daftar' => 6,
             'pemohon' => $this->pemohon,
             'almt_pemohon' => $this->almt_pemohon,
             'no_telp_pemohon' => $this->no_telp_pemohon,
@@ -176,6 +206,8 @@ class PendaftaranPelanggan extends Component
             'no_rumah' => $this->no_rumah,
             'kd_cabang' => $this->kd_cabang,
             'crt_userid' => Auth::user()->id,
+            'maps_lat' => $this->maps_lat,
+            'maps_long' => $this->maps_long,
         ]);
 
         // dd($insert_pendaftaran);
@@ -184,5 +216,6 @@ class PendaftaranPelanggan extends Component
 
         session()->flash('message', 'Master data rekanan successfully created.');
     }
+
 
 }

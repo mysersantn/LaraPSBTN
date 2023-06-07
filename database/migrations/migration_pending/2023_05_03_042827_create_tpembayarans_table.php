@@ -30,7 +30,7 @@ return new class extends Migration
             $table->string('kd_pelanggan');
             $table->string('crt_userid');
             $table->date('crt_tgl');
-            $table->string('upd_userid');
+            $table->bigInteger('upd_userid')->nullable();
             $table->date('upd_tgl');
             $table->string('kode_bank');
             $table->string('s_bayar');

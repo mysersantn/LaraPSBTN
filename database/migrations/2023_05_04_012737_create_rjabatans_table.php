@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('kd_jabatan',2);
             $table->string('jabatan');
             $table->bigInteger('crt_userid');
-            $table->bigInteger('upd_userid');
+            $table->bigInteger('upd_userid')->nullable();
             $table->timestamps();
         });
     }

@@ -24,7 +24,7 @@ return new class extends Migration
             $table->string('gps_lat');
             $table->string('gps_long');
             $table->string('foto_name');
-            $table->string('upd_userid');
+            $table->bigInteger('upd_userid')->nullable();
             $table->string('ket_survey');
             $table->string('nip_surveyor');
             $table->date('upd_tgl');
