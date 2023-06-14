@@ -1,0 +1,2 @@
+main = [#0a66c2]
+active = [#3b85ce]

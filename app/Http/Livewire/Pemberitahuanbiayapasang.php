@@ -4,10 +4,10 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 
-class Pemberitahuanbiayapasang extends Component
+class PemberitahuanBiayaPasang extends Component
 {
     public function render()
     {
-        return view('livewire.pemberitahuanbiayapasang');
+        return view('livewire.pendaftarans.pemberitahuan-biaya-pasang');
     }
 }

@@ -6,17 +6,24 @@
         <x-application-logo class="block h-12 w-auto" />
 
         <h1 class="mt-8 text-2xl font-medium text-gray-900">
-            Welcome to Pasang Baru PERUMDA TIRTANADI endah
+            Welcome to Pasang Baru PERUMDA TIRTANADI
         </h1>
 
         <p class="mt-6 text-gray-500">
-            Pasang Baru PERUMDA TIRTANADI provides a beautiful, robust starting point for your next Laravel application.
-            Laravel is designed
-            to help you build your application using a development environment that is simple, powerful, and enjoyable.
-            We believe
-            you should love expressing your creativity through programming, so we have spent time carefully crafting the
-            Laravel
-            ecosystem to be a breath of fresh air. We hope you love it.
+            Sambutlah masa depan yang cerah dengan pelayanan terbaik untuk Anda. Kami hadir dengan semangat baru dan
+            inovasi yang tak terbatas untuk memenuhi kebutuhan air bersih Anda. Bersama-sama, kita akan membentuk
+            lingkungan yang lebih baik, lebih berkelanjutan, dan lebih nyaman.
+            
+            Dengan keahlian dan komitmen kami, kami siap untuk memberikan layanan terbaik dalam pemasangan baru dan
+            perbaikan jaringan air. Kami berkomitmen untuk memenuhi harapan Anda dan memberikan pengalaman yang tak
+            terlupakan dalam mendapatkan akses yang lebih baik kepada air bersih.
+
+            Saatnya bergabung dengan kami di PERUMDA TIRTANADI dan rasakan perbedaannya. Kami akan membantu Anda memulai
+            langkah baru dengan keyakinan dan kualitas yang tak tertandingi. Bersama, mari kita bergerak maju dan
+            menciptakan masa depan yang lebih baik untuk komunitas kita.
+
+            Selamat datang di Pasang Baru PERUMDA TIRTANADI, di mana layanan unggul dan kepuasan pelanggan adalah yang
+            utama.
         </p>
     </div>
 
@@ -167,7 +174,8 @@
     <div class="mt-8">
         <div class="bg-white sm:rounded-lg shadow-md">
             <div class="shadow-md rounded-lg overflow-hidden">
-                <div class="py-3 px-5 bg-gray-50 text-gray-700 font-semibold">Chart Pendaftaran Pelanggan Pasang Baru Tahun <span class="font-bold text-blue-900">(2023)</span> </div>
+                <div class="py-3 px-5 bg-gray-50 text-gray-700 font-semibold">Chart Pendaftaran Pelanggan Pasang Baru
+                    Tahun <span class="font-bold text-blue-900">(2023)</span> </div>
                 <canvas class="p-10" id="chartBar"></canvas>
             </div>
 
@@ -351,7 +359,7 @@
                         class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                         <th scope="row"
                             class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                           1
+                            1
                         </th>
                         <td class="px-6 py-4">
                             Medan Kota
@@ -385,7 +393,7 @@
                         class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                         <th scope="row"
                             class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                           1
+                            1
                         </th>
                         <td class="px-6 py-4">
                             Medan Kota
@@ -419,7 +427,7 @@
                         class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                         <th scope="row"
                             class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                           1
+                            1
                         </th>
                         <td class="px-6 py-4">
                             Medan Kota
@@ -453,7 +461,7 @@
                         class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                         <th scope="row"
                             class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                           1
+                            1
                         </th>
                         <td class="px-6 py-4">
                             Medan Kota

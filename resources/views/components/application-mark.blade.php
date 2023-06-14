@@ -1,1 +1,1 @@
-<img src="{{ asset('/images/tirtanadi-logo.png') }}" alt="tirtanadi-logo" style="width: 48px;">
+<img src="{{ asset('/images/ic_launcher.png') }}" alt="tirtanadi-logo" style="width: 44px;">

@@ -16,12 +16,12 @@
                         class="block pt-2 mb-2 text-sm font-medium text-gray-900 dark:text-white">Latitude</label>
                     <input wire:model="maps_lat" type="text" id="lat"
                         class="bg-gray-100 border border-gray-300 text-gray-400 text-sm rounded-lg block w-full p-2.5"
-                        placeholder="" >
+                        placeholder="">
                     <label for="long"
                         class="block pt-2 mb-2 text-sm font-medium text-gray-900 dark:text-white">Longitude</label>
                     <input wire:model="maps_long" type="text" id="long"
                         class="bg-gray-100 border border-gray-300 text-gray-400 text-sm rounded-lg block w-full p-2.5"
-                        placeholder="" >
+                        placeholder="">
                 </div>
             </div>
         </div>
@@ -39,6 +39,50 @@
             }, // Pusatkan peta pada Indonesia (koordinat Indonesia sumatera utara)
         });
 
+        // Tambahkan event listener saat nilai select box berubah
+        document.getElementById("kd_pos").addEventListener("change", function() {
+            var selectedKdPos = this.value;
+
+            // Panggil fungsi untuk mengambil koordinat berdasarkan kode pos
+            getCoordinatesByKodePos(selectedKdPos);
+        });
+
+        // Fungsi untuk mengambil koordinat berdasarkan kode pos
+        function getCoordinatesByKodePos(kodePos) {
+            var geocoder = new google.maps.Geocoder();
+
+            geocoder.geocode({
+                address: kodePos + ", Indonesia"
+            }, function(results, status) {
+                if (status === google.maps.GeocoderStatus.OK) {
+                    var location = results[0].geometry.location;
+                    var lat = location.lat();
+                    var lng = location.lng();
+
+                    // Set nilai koordinat di input field atau variabel yang Anda inginkan
+                    document.getElementById("lat").value = lat;
+                    document.getElementById("long").value = lng;
+
+                    // Tambahkan baris berikut untuk mengupdate variabel di sisi Livewire
+                    Livewire.emit('updateMapsCoordinates', lat, lng);
+                    map.setZoom(20);
+
+                    // Tambahkan marker baru pada lokasi
+                    if (window.marker) {
+                        window.marker.setMap(null);
+                    }
+
+                    window.marker = new google.maps.Marker({
+                        map: map,
+                        position: location
+                    });
+
+                    map.panTo(location);
+                }
+            });
+        }
+
+        // Fungsi untuk mengambil koordinat berdasarkan pencarian dari textbox
         const input = document.getElementById("location-input");
         const searchBox = new google.maps.places.SearchBox(input);
 
@@ -60,7 +104,7 @@
             Livewire.emit('updateMapsCoordinates', lat, lng);
 
             map.setCenter(place.geometry.location);
-            map.setZoom(15);
+            map.setZoom(20);
 
             // Hapus marker sebelumnya jika ada
             if (window.marker) {
@@ -105,12 +149,6 @@
 
     }
 </script>
-
-
-
-{{-- Global API GOOGLE MAP --}}
-{{-- <script src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAP_KEY') }}&libraries=places&callback=initMap" async defer></script> --}}
-
 {{-- API Google Map dengan bahasa Indonesia --}}
 <script
     src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAP_KEY') }}&libraries=places&language=id&callback=initMap"

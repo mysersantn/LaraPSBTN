@@ -1,6 +1,6 @@
 <x-guest-layout>
     <div class="sm:grid sm:grid-cols-5">
-        <div class="bg-blue-800 flex items-center justify-center col-span-3">
+        <div class="bg-[#0a66c2] flex items-center justify-center col-span-3">
             <img src="{{ asset('/images/tirtanadi-image-login.png') }}" alt="tirtanadi-image-login" >
         </div>
         <div class="col-span-2">

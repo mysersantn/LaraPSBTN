@@ -19,6 +19,7 @@ use Illuminate\Support\Facades\DB;
 class PendaftaranPelanggan extends Component
 {
     public $pendaftaran, $cabang, $kodepos, $provinsi, $kotaKabupaten, $kecamatan, $kelurahan;
+    public $baseUrl,$urlClose;
     public $tgl_daftar,
        $tgl_today,
        $s_daftar,
@@ -89,6 +90,9 @@ class PendaftaranPelanggan extends Component
 
     public function render()
     {
+        $this->baseUrl='pendaftaran-pelanggan';
+        $this->closeUrl='pendaftaran-main';
+
         $this->tgl_today = Carbon::now()->format('Y-m-d');
         $this->cabang = modelCabang::where('j_kantor', 'C')->orderby('kd_kantor')->get();
         $this->provinsi = modelProvinsi::where('kd_prop', 12)->get();
@@ -157,6 +161,8 @@ class PendaftaranPelanggan extends Component
 
     public function store()
     {
+
+        // dd($this->maps_lat,$this->maps_long);
         $this->validate([
             'tgl_daftar' => 'required',
             'pemohon' => 'required',
@@ -210,11 +216,12 @@ class PendaftaranPelanggan extends Component
             'maps_long' => $this->maps_long,
         ]);
 
-        // dd($insert_pendaftaran);
-
         $this->resetInput();
-
-        session()->flash('message', 'Master data rekanan successfully created.');
+        // session()->flash('message', '<b>Proses pendaftaran pasang baru pelanggan successfully created</b>. Nomor Register <b>{{$insert_pendaftaran->kd_daftar}}</b>. Pilih <b>"Close"</b> untuk keluar dari menu Pendaftaran Pelanggan Sambungan Baru dan silahkan lanjut ke proses lanjutnya atau pilih <b>"New"</b> jika ingin melakukan pendaftaran pelanggan baru lainnya.');
+        session()->flash('message',
+        'Nomor Register <b>'.$insert_pendaftaran->kd_daftar.'</b>.
+        <br><b>Proses pendaftaran pasang baru pelanggan successfully created</b>.
+        <br>Pilih <b>"Close"</b> untuk keluar dari menu Pendaftaran Pelanggan Sambungan Baru dan silahkan lanjut ke proses lanjutnya atau pilih <b>"New"</b> jika ingin melakukan pendaftaran pelanggan baru lainnya.');
     }
 
 

@@ -8,6 +8,12 @@
     margin: 0 auto;
 }
 
+/* #map-modal {
+    height: 200px;
+    width: 100%;
+    margin: 0 auto;
+} */
+
 @media only screen and (max-width: 600px) {
     #map {
         height: 300px; /* Atur tinggi yang sesuai untuk perangkat seluler */
@@ -36,7 +42,7 @@
  .la-ball-clip-rotate-pulse {
      display: block;
      font-size: 0;
-     color: #fff;
+     color: #0a66c2;
  }
  .la-ball-clip-rotate-pulse.la-dark {
      color: #333;
