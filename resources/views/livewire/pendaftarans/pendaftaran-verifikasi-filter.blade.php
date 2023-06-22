@@ -1,5 +1,5 @@
 <div class=" gap-8 mb-6">
-    <div class="w-full">
+    <div class="relative overflow-x-auto w-full">
         <div class="text-xs text-gray-700 font-bold mb-2">Daftar Pendaftaran Online tanpa
             diketahui
             Cabang <span class="text-red-600 font-bold text-sm">({{ $jumlahPendaftaranNonCabang }})</span>
@@ -59,7 +59,7 @@
         </table>
         <div class="py-4 text-xs">{{ $pendaftaranNonCabang->links() }}</div>
     </div>
-    <div class="w-full">
+    <div class="relative overflow-x-auto w-full">
         <div class="text-xs text-gray-700 font-bold mb-2">Daftar Pendaftaran Online di
             {{ auth()->user()->mkantor->kantor }} <span
                 class="text-red-600 font-bold text-sm">({{ $jumlahPendaftaranCabang }})</span>

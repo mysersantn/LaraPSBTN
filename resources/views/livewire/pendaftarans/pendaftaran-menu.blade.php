@@ -36,7 +36,7 @@
                     {{ __('Anggaran Biaya Pemasangan') }}
                 </x-nav-link-my>
                 <x-nav-link-my href="{{ route('pemberitahuan-biaya-pasang') }}" :active="request()->routeIs('pemberitahuan-biaya-pasang')">
-                    {{ __('Pemberitahuan Biaya Pemasangan') }}
+                    {{ __('Pemberitahuan Biaya Pasang') }}
                 </x-nav-link-my>
                 <x-nav-link-my href="{{ route('permintaan-meter-air') }}" :active="request()->routeIs('permintaan-meter-air')">
                     {{ __('Permintaan Meter Air') }}

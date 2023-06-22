@@ -157,19 +157,19 @@ class PendaftaranVerifikasi extends Component
             'latitude' => 2.1154,
             'longitude' => 99.5451,
         ]);
-        // $this->pendafataranGet = new Collection();
-        // $record = modelPendaftaran::findOrFail($id);
-        // $this->selected_id = $id;
-        // $this->kd_daftar = $record->kd_daftar;
-        // $this->pemilik = $record->pemilik;
-        // $this->no_hp = $record->no_hp;
-        // $this->almt_pasang = $record->almt_pasang;
-        // $this->kd_prop = $record->rprovinsi->provinsi;
-        // $this->kd_kab = $record->rkabupaten->kabupaten;
-        // $this->kd_kec = $record->rkecamatan->kecamatan;
-        // $this->kd_kel = $record->rkelurahan->kelurahan;
-        // $this->kd_pos = $record->kd_pos;
-        // $this->kd_cabang = $record->kd_cabang;
+        $this->pendafataranGet = new Collection();
+        $record = modelPendaftaran::findOrFail($id);
+        $this->selected_id = $id;
+        $this->kd_daftar = $record->kd_daftar;
+        $this->pemilik = $record->pemilik;
+        $this->no_hp = $record->no_hp;
+        $this->almt_pasang = $record->almt_pasang;
+        $this->kd_prop = $record->rprovinsi->provinsi;
+        $this->kd_kab = $record->rkabupaten->kabupaten;
+        $this->kd_kec = $record->rkecamatan->kecamatan;
+        $this->kd_kel = $record->rkelurahan->kelurahan;
+        $this->kd_pos = $record->kd_pos;
+        $this->kd_cabang = $record->kd_cabang;
 
     }
 }

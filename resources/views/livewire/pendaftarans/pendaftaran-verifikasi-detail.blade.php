@@ -23,14 +23,14 @@
                                         Register</label>
                                     <input wire:model.defer='kd_daftar' type="text" id="kd_daftar"
                                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                        placeholder="" readonly>
+                                        placeholder="" disabled disabled readonly>
                                 </div>
                                 <div class="mb-2 flex gap-4">
                                     <label for="pemilik"
                                         class="block w-full mb-2 text-sm font-medium text-gray-900 dark:text-white">Pemilik</label>
                                     <input wire:model.defer='pemilik' type="text" id="pemilik"
                                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                        placeholder="" readonly>
+                                        placeholder="" disabled readonly>
                                 </div>
                                 <div class="mb-2 flex gap-4">
                                     <label for="no_hp"
@@ -38,7 +38,7 @@
                                         Handphone</label>
                                     <input wire:model.defer='no_hp' type="text" id="no_hp"
                                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                        placeholder="" readonly>
+                                        placeholder="" disabled readonly>
                                 </div>
                                 <div class="mb-2 flex gap-4">
 
@@ -47,14 +47,14 @@
                                         Pemasangan</label>
                                     <textarea wire:model.defer='almt_pasang' id="almt_pemilik" rows="4"
                                         class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                        placeholder="" readonly></textarea>
+                                        placeholder="" disabled readonly></textarea>
                                 </div>
                                 <div class="mb-2 flex gap-4">
                                     <label for="provinsi"
                                         class="block w-full mb-2 text-sm font-medium text-gray-900 dark:text-white">Provinsi</label>
                                     <input wire:model.defer='kd_prop' type="text" id="provinsi"
                                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                        placeholder="" readonly>
+                                        placeholder="" disabled readonly>
                                 </div>
                                 <div class="mb-2 flex gap-4">
                                     <label for="kabupaten"
@@ -63,21 +63,21 @@
                                         Kabupaten</label>
                                     <input wire:model.defer='kd_kab' type="text" id="kabupaten"
                                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                        placeholder="" readonly>
+                                        placeholder="" disabled readonly>
                                 </div>
                                 <div class="mb-2 flex gap-4">
                                     <label for="kecamatan"
                                         class="block w-full mb-2 text-sm font-medium text-gray-900 dark:text-white">Kecamatan</label>
                                     <input wire:model.defer='kd_kec' type="text" id="kecamatan"
                                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                        placeholder="" readonly>
+                                        placeholder="" disabled readonly>
                                 </div>
                                 <div class="mb-2 flex gap-4">
                                     <label for="kelurahan"
                                         class="block w-full mb-2 text-sm font-medium text-gray-900 dark:text-white">Kelurahan</label>
                                     <input wire:model.defer='kd_kel' type="text" id="kelurahan"
                                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                        placeholder="" readonly>
+                                        placeholder="" disabled readonly>
                                 </div>
                                 <div class="mb-2 flex gap-4">
                                     <label for="kd_pos"
@@ -85,7 +85,7 @@
                                         Pos</label>
                                     <input wire:model.defer='kd_pos' type="text" id="kd_pos"
                                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                        placeholder="" readonly>
+                                        placeholder="" disabled readonly>
                                 </div>
                                 <div class="mb-2 flex gap-4">
                                     <label for="kocab"
@@ -102,7 +102,7 @@
                             <div class="bg-gray-900 p-4">
                                 <div class="text-sm font-medium text-gray-900">Lokasi
                                     Denah Pemasangan</div>
-                                <div wire:ignore class="block w-full rounded-lg bg-gray-50" id="map"></div>
+                                <div class="block w-full rounded-lg bg-gray-50" id="map"></div>
                             </div>
                         </div>
                     </div>
@@ -121,7 +121,6 @@
         </div>
     </div>
     <script>
-alert(5);
         function initMap() {
             console.log("Menginisialisasi peta...");
             const map = new google.maps.Map(document.getElementById("map"), {
@@ -133,11 +132,7 @@ alert(5);
             });
             console.log("Peta berhasil diinisialisasi.");
         }
-        initMap()
-
-</script>
-
-
+    </script>
     <script
         src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places&language=id&callback=initMap"
         async defer></script>
