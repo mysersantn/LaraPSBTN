@@ -153,6 +153,10 @@ class PendaftaranVerifikasi extends Component
     {
         $this->detailMode = true;
 
+        $this->dispatchBrowserEvent('showMap', [
+            'latitude' => 2.1154,
+            'longitude' => 99.5451,
+        ]);
         // $this->pendafataranGet = new Collection();
         // $record = modelPendaftaran::findOrFail($id);
         // $this->selected_id = $id;

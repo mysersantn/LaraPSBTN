@@ -1,5 +1,5 @@
 <div class="p-2 lg:p-4 bg-white border-b border-gray-200 rounded-xl">
-    <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white text-gray-900"
+    <div wire:ignore id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white text-gray-900"
         data-inactive-classes="text-gray-500">
         <h2 id="accordion-flush-heading-1">
             <button type="button"
