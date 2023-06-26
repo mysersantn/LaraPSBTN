@@ -23,6 +23,12 @@
 
     <script src="https://kit.fontawesome.com/52e3311a73.js" crossorigin="anonymous"></script>
 
+    {{-- API Google Map dengan bahasa Indonesia --}}
+    @stack('google-maps-script')
+    {{-- <script
+        src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAP_KEY') }}&libraries=places&language=id&callback=initMap"
+        async defer></script> --}}
+
 </head>
 
 <body class="font-sans antialiased">

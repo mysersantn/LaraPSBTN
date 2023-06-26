@@ -1,12 +1,17 @@
 <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
 
+    @push('google-maps-script')
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAP_KEY') }}&libraries=places&language=id&callback=initMap"
+            async defer></script>
+    @endpush
     @if (session()->has('message'))
         @include('components.alert-message-confirm-my')
     @endif
-
     @if ($detailMode)
         @include('livewire.pendaftarans.pendaftaran-verifikasi-detail')
     @endif
+
 
     <div class="grid lg:grid-cols-8 gap-8">
         <div class="col-span-2 sticky top-16" style="height: 1000px;">
@@ -91,4 +96,3 @@
         </div>
     </div>
 </div>
-

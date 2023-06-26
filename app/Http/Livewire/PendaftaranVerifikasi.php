@@ -22,6 +22,8 @@ class PendaftaranVerifikasi extends Component
     public $detailMode;
     public $pendafataranGet;
 
+    public $selected_id, $kd_daftar, $pemilik, $no_hp, $almt_pasang, $kd_prop, $kd_kab, $kd_kec, $kd_kel, $kd_pos, $kd_cabang, $maps_lat, $maps_lng;
+
     use WithPagination;
 
     public function render()
@@ -153,10 +155,11 @@ class PendaftaranVerifikasi extends Component
     {
         $this->detailMode = true;
 
-        $this->dispatchBrowserEvent('showMap', [
-            'latitude' => 2.1154,
-            'longitude' => 99.5451,
-        ]);
+        // $this->dispatchBrowserEvent('showMap', [
+        //     'latitude' => 2.1154,
+        //     'longitude' => 99.5451,
+        // ]);
+
         $this->pendafataranGet = new Collection();
         $record = modelPendaftaran::findOrFail($id);
         $this->selected_id = $id;
@@ -170,6 +173,8 @@ class PendaftaranVerifikasi extends Component
         $this->kd_kel = $record->rkelurahan->kelurahan;
         $this->kd_pos = $record->kd_pos;
         $this->kd_cabang = $record->kd_cabang;
-
+        $this->maps_lat = $record->maps_lat;
+        $this->maps_lng = $record->maps_long;
+        // dd($this->maps_lat,$this->maps_lng);
     }
 }

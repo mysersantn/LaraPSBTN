@@ -15,7 +15,7 @@
                     </div>
                     <hr class="pb-4">
                     <div>
-                        <div class="grid md:grid-cols-2 md:gap-6">
+                        <div class="grid md:grid-cols-2 md:gap-2">
                             <div class="bg-blue-50 p-4">
                                 <div class="mb-2 flex gap-4">
                                     <label for="kd_daftar"
@@ -99,10 +99,10 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="bg-gray-900 p-4">
-                                <div class="text-sm font-medium text-gray-900">Lokasi
+                            <div class="border p-4">
+                                <div class="text-sm font-medium text-gray-900 mb-4">Lokasi
                                     Denah Pemasangan</div>
-                                <div class="block w-full rounded-lg bg-gray-50" id="map"></div>
+                                <div wire:ignore class="block w-full rounded-lg bg-gray-50" id="map"></div>
                             </div>
                         </div>
                     </div>
@@ -122,18 +122,22 @@
     </div>
     <script>
         function initMap() {
-            console.log("Menginisialisasi peta...");
             const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 0,
+                zoom: 20,
                 center: {
-                    lat: 2.1154,
-                    lng: 99.5451
+                    lat: <?php echo $maps_lat; ?>,
+                    lng: <?php echo $maps_lng; ?>
                 },
             });
-            console.log("Peta berhasil diinisialisasi.");
+            // Add a marker at the specified coordinates
+            const marker = new google.maps.Marker({
+                position: {
+                    lat: <?php echo $maps_lat; ?>,
+                    lng: <?php echo $maps_lng; ?>
+                },
+                map: map
+            });
         }
+        initMap();
     </script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places&language=id&callback=initMap"
-        async defer></script>
 </div>

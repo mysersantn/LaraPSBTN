@@ -29,6 +29,12 @@
     </div>
 </div>
 
+@push('google-maps-script')
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAP_KEY') }}&libraries=places&language=id&callback=initMap"
+        async defer></script>
+@endpush
+
 <script>
     function initMap() {
         const map = new google.maps.Map(document.getElementById("map"), {
@@ -146,10 +152,5 @@
             // Panahkan peta ke lokasi yang diklik
             map.panTo(event.latLng);
         });
-
     }
 </script>
-{{-- API Google Map dengan bahasa Indonesia --}}
-<script
-    src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAP_KEY') }}&libraries=places&language=id&callback=initMap"
-    async defer></script>
